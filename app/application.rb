@@ -12,8 +12,7 @@ class Application
         resp.write("#{item.price}\n")
       else
         resp.status = 400
-        resp.write("#{item.name}: #{item.price}\n")
-        # resp.write("Item not found\n")
+        resp.write("Item not found\n")
       end
       
     else
