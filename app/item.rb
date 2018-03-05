@@ -2,7 +2,7 @@ class Item
   attr_accessor :name, :price
   @@items = []
   
-  def self.items
+  def self.all
     @@items
   end
 
