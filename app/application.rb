@@ -9,7 +9,7 @@ class Application
       
       puts "------------------------------"
       puts "#{item_name}"
-      puts "#{Item.all.find{|item| item.name==item_name}}"
+      puts "#{Item.all}"
       puts "------------------------------"
       
       if item = Item.all.find{|item| item.name==item_name}
