@@ -5,6 +5,10 @@ class Application
     req  = Rack::Request.new(env)
     
     if req.path.match(/items/)
+      item_name = req.path.split(/items/).last
+      
+    else
+      req.status = 404
     end
     
     resp.finish
