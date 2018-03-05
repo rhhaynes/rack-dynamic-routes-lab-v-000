@@ -10,10 +10,10 @@ class Application
       if Items.all.any{|item| item.name==item_name}
         item = Items.all.find{|item| item.name==item_name}
         resp.status = 200
-        resp.write(item.price)
+        resp.write("#{item.price}\n")
       else
         resp.status = 400
-        resp.write("Item not found")
+        resp.write("Item not found\n")
       end
       
     else
