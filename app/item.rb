@@ -3,7 +3,7 @@ class Item
   @@items = []
   
   def self.items
-    @@items
+    @@item
   end
 
   def initialize(name,price)
